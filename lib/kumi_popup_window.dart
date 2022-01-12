@@ -519,7 +519,7 @@ class _KumiPopupWindowState extends State<KumiPopupWindow> with SingleTickerProv
                         color: widget._bgColor,
                       ),
                     ),
-                    onTap: () {
+                    onTapDown: (detail) {
                       if (widget._clickOutDismiss) {
                         widget.dismiss(context);
                         return;
